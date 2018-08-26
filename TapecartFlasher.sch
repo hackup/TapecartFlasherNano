@@ -5,10 +5,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date "jeu. 02 avril 2015"
-Rev ""
-Comp ""
+Title "TapecartFlasher"
+Date "2018-08-26"
+Rev "Rev.1"
+Comp "hackup.net"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -42,7 +42,7 @@ Text Label 8700 2400 0    60   ~ 0
 11(**/MOSI)
 Text Label 8700 2500 0    60   ~ 0
 12(MISO)
-Text Label 10550 2500 0    60   ~ 0
+Text Label 10150 2500 0    60   ~ 0
 13(SCK)
 Text Label 10550 2200 0    60   ~ 0
 A0
@@ -371,8 +371,6 @@ Wire Wire Line
 Wire Wire Line
 	2500 2200 2500 1650
 Connection ~ 2500 1650
-Wire Wire Line
-	2500 1650 2800 1650
 Text GLabel 8700 1500 0    50   Input ~ 0
 Motor5
 Text GLabel 8700 1600 0    50   Input ~ 0
@@ -381,7 +379,7 @@ Text GLabel 8700 1700 0    50   Input ~ 0
 Write
 Text GLabel 8700 1800 0    50   Input ~ 0
 Sense
-Text GLabel 2800 1650 2    50   Input ~ 0
+Text GLabel 3350 1550 2    50   Input ~ 0
 Motor7
 Text GLabel 2800 1750 2    50   Input ~ 0
 Read
@@ -619,4 +617,76 @@ $EndComp
 Connection ~ 5650 2550
 Wire Wire Line
 	5650 2550 6000 2550
+$Comp
+L Connector:Conn_01x06_Female J2
+U 1 1 5B831172
+P 8600 4000
+F 0 "J2" H 8627 3976 50  0000 L CNN
+F 1 "SD Module" H 8627 3885 50  0000 L CNN
+F 2 "Socket_Strips:Socket_Strip_Angled_1x06_Pitch2.54mm" H 8600 4000 50  0001 C CNN
+F 3 "~" H 8600 4000 50  0001 C CNN
+	1    8600 4000
+	1    0    0    -1  
+$EndComp
+Text GLabel 8400 4000 0    50   Input ~ 0
+SD_MISO
+Text GLabel 8400 4100 0    50   Input ~ 0
+SD_MOSI
+Text GLabel 8400 4200 0    50   Input ~ 0
+SD_SCK
+Text GLabel 8400 4300 0    50   Input ~ 0
+SD_SEL
+$Comp
+L power:GND #PWR0108
+U 1 1 5B8315FA
+P 7900 4450
+F 0 "#PWR0108" H 7900 4200 50  0001 C CNN
+F 1 "GND" H 7900 4300 50  0000 C CNN
+F 2 "" H 7900 4450 50  0000 C CNN
+F 3 "" H 7900 4450 50  0000 C CNN
+	1    7900 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 3800 7900 3800
+Wire Wire Line
+	7900 3800 7900 4450
+$Comp
+L power:+5V #PWR0109
+U 1 1 5B8343B1
+P 8000 3700
+F 0 "#PWR0109" H 8000 3550 50  0001 C CNN
+F 1 "+5V" H 8000 3840 28  0000 C CNN
+F 2 "" H 8000 3700 50  0000 C CNN
+F 3 "" H 8000 3700 50  0000 C CNN
+	1    8000 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 3900 8000 3900
+Wire Wire Line
+	8000 3900 8000 3700
+Text GLabel 8700 2300 0    50   Input ~ 0
+SD_SEL
+Text GLabel 8700 2400 0    50   Input ~ 0
+SD_MOSI
+Text GLabel 8700 2500 0    50   Input ~ 0
+SD_MISO
+Text GLabel 10550 2500 2    50   Input ~ 0
+SD_SCK
+$Comp
+L w_conn:GS3 JP1
+U 1 1 5B8479B7
+P 3200 1650
+F 0 "JP1" H 3200 1361 50  0000 C CNN
+F 1 "Vmotor" H 3200 1445 40  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 3200 1650 50  0001 C CNN
+F 3 "" H 3200 1650 50  0001 C CNN
+	1    3200 1650
+	-1   0    0    1   
+$EndComp
+Text GLabel 3350 1750 2    50   Input ~ 0
+Motor5
+Wire Wire Line
+	2500 1650 3050 1650
 $EndSCHEMATC
