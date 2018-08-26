@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name TapecartFlasher-rescue)(type Legacy)(uri ${KIPRJMOD}/TapecartFlasher-rescue.lib)(options "")(descr ""))
+)
