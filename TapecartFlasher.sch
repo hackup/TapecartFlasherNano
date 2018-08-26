@@ -5,7 +5,7 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "TapecartFlasher"
+Title "TapecartFlasher Nano"
 Date "2018-08-26"
 Rev "Rev.1"
 Comp "hackup.net"
