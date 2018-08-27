@@ -64,8 +64,6 @@ Text Label 10550 2300 0    60   ~ 0
 AREF
 Text Label 10550 1300 0    60   ~ 0
 RST
-Text Notes 10800 1000 0    60   ~ 0
-Holes
 Text Notes 8350 575  0    60   ~ 0
 Shield for Arduino Nano
 Text Label 10250 950  1    60   ~ 0
@@ -74,54 +72,6 @@ Wire Notes Line
 	8325 650  9525 650 
 Wire Notes Line
 	9525 650  9525 475 
-$Comp
-L TapecartFlasher-rescue:CONN_01X01 P3
-U 1 1 56D73ADD
-P 10800 650
-F 0 "P3" V 10900 650 50  0000 C CNN
-F 1 "CONN_01X01" V 10900 650 50  0001 C CNN
-F 2 "Socket_Arduino_Nano:1pin_Nano" H 10800 650 50  0001 C CNN
-F 3 "" H 10800 650 50  0000 C CNN
-	1    10800 650 
-	0    -1   -1   0   
-$EndComp
-NoConn ~ 10800 850 
-$Comp
-L TapecartFlasher-rescue:CONN_01X01 P4
-U 1 1 56D73D86
-P 10900 650
-F 0 "P4" V 11000 650 50  0000 C CNN
-F 1 "CONN_01X01" V 11000 650 50  0001 C CNN
-F 2 "Socket_Arduino_Nano:1pin_Nano" H 10900 650 50  0001 C CNN
-F 3 "" H 10900 650 50  0000 C CNN
-	1    10900 650 
-	0    -1   -1   0   
-$EndComp
-$Comp
-L TapecartFlasher-rescue:CONN_01X01 P5
-U 1 1 56D73DAE
-P 11000 650
-F 0 "P5" V 11100 650 50  0000 C CNN
-F 1 "CONN_01X01" V 11100 650 50  0001 C CNN
-F 2 "Socket_Arduino_Nano:1pin_Nano" H 11000 650 50  0001 C CNN
-F 3 "" H 11000 650 50  0000 C CNN
-	1    11000 650 
-	0    -1   -1   0   
-$EndComp
-$Comp
-L TapecartFlasher-rescue:CONN_01X01 P6
-U 1 1 56D73DD9
-P 11100 650
-F 0 "P6" V 11200 650 50  0000 C CNN
-F 1 "CONN_01X01" V 11200 650 50  0001 C CNN
-F 2 "Socket_Arduino_Nano:1pin_Nano" H 11100 650 50  0001 C CNN
-F 3 "" H 11100 650 50  0000 C CNN
-	1    11100 650 
-	0    -1   -1   0   
-$EndComp
-NoConn ~ 10900 850 
-NoConn ~ 11000 850 
-NoConn ~ 11100 850 
 $Comp
 L TapecartFlasher-rescue:CONN_01X15 P1
 U 1 1 56D73FAC
@@ -258,10 +208,6 @@ Wire Wire Line
 	10550 2300 10150 2300
 Wire Wire Line
 	10150 2500 10550 2500
-Wire Notes Line
-	11200 1050 10650 1050
-Wire Notes Line
-	10650 1050 10650 500 
 Wire Notes Line
 	11150 2850 8400 2850
 Wire Notes Line
@@ -675,7 +621,7 @@ SD_MISO
 Text GLabel 10550 2500 2    50   Input ~ 0
 SD_SCK
 $Comp
-L w_conn:GS3 JP1
+L conn:GS3 JP1
 U 1 1 5B8479B7
 P 3200 1650
 F 0 "JP1" H 3200 1361 50  0000 C CNN
