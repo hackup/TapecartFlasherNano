@@ -367,7 +367,7 @@ L device:D_Zener D3
 U 1 1 5B6656B6
 P 6250 1850
 F 0 "D3" V 6204 1929 50  0000 L CNN
-F 1 "7.5" V 6295 1929 50  0000 L CNN
+F 1 "6.8" V 6295 1929 50  0000 L CNN
 F 2 "Diodes_THT:D_T-1_P5.08mm_Horizontal" H 6250 1850 50  0001 C CNN
 F 3 "https://en.wikipedia.org/wiki/Zener_diode" H 6250 1850 50  0001 C CNN
 	1    6250 1850
@@ -464,7 +464,7 @@ U 1 1 5B6EACA8
 P 5900 2900
 F 0 "Q2" H 6091 2854 50  0000 L CNN
 F 1 "BC557" H 6091 2945 50  0000 L CNN
-F 2 "TO_SOT_Packages_THT:TO-92_Inline_Narrow_Oval" H 6100 2825 50  0001 L CIN
+F 2 "TO_SOT_Packages_THT:TO-92_Molded_Narrow" H 6100 2825 50  0001 L CIN
 F 3 "http://www.fairchildsemi.com/ds/BC/BC557.pdf" H 5900 2900 50  0001 L CNN
 	1    5900 2900
 	1    0    0    1   
@@ -475,7 +475,7 @@ U 1 1 5B6EAD2C
 P 5150 3150
 F 0 "Q1" H 5341 3196 50  0000 L CNN
 F 1 "BC547" H 5341 3105 50  0000 L CNN
-F 2 "TO_SOT_Packages_THT:TO-92_Inline_Narrow_Oval" H 5350 3075 50  0001 L CIN
+F 2 "TO_SOT_Packages_THT:TO-92_Molded_Narrow" H 5350 3075 50  0001 L CIN
 F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 5150 3150 50  0001 L CNN
 	1    5150 3150
 	1    0    0    -1  
@@ -617,7 +617,7 @@ SD_MISO
 Text GLabel 10550 2500 2    50   Input ~ 0
 SD_SCK
 $Comp
-L conn:GS3 JP1
+L w_conn:GS3 JP1
 U 1 1 5B8479B7
 P 3200 1650
 F 0 "JP1" H 3200 1361 50  0000 C CNN
