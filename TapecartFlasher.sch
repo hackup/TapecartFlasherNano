@@ -208,10 +208,6 @@ Wire Wire Line
 	10550 2300 10150 2300
 Wire Wire Line
 	10150 2500 10550 2500
-Wire Notes Line
-	11150 2850 8400 2850
-Wire Notes Line
-	8300 2850 8300 500 
 Text Notes 9650 1100 0    60   ~ 0
 1
 $Comp
@@ -635,4 +631,38 @@ Text GLabel 3350 1750 2    50   Input ~ 0
 Motor5
 Wire Wire Line
 	2500 1650 3050 1650
+Wire Notes Line
+	900  700  900  3700
+Wire Notes Line
+	900  3700 3800 3700
+Wire Notes Line
+	3800 3700 3800 700 
+Wire Notes Line
+	900  700  3800 700 
+Wire Notes Line
+	3950 700  3950 3700
+Wire Notes Line
+	3950 3700 7150 3700
+Wire Notes Line
+	7150 3700 7150 700 
+Wire Notes Line
+	7150 700  3950 700 
+Wire Notes Line
+	7600 3350 7600 4900
+Wire Notes Line
+	7600 4900 9550 4900
+Wire Notes Line
+	9550 4900 9550 3350
+Wire Notes Line
+	9550 3350 7600 3350
+Wire Notes Line
+	8300 500  8300 2850
+Wire Notes Line
+	8300 2850 11200 2850
+Text Notes 8500 4850 0    60   ~ 0
+SD Module Connector
+Text Notes 5650 3650 0    60   ~ 0
+Charge Pump and Motor Signal
+Text Notes 2650 3650 0    60   ~ 0
+Cassete Port Connector
 $EndSCHEMATC
