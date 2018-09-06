@@ -6,8 +6,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "TapecartFlasher Nano"
-Date "2018-08-26"
-Rev "Rev.1"
+Date "2018-09-06"
+Rev "Rev.2"
 Comp "hackup.net"
 Comment1 ""
 Comment2 ""
@@ -354,23 +354,23 @@ $EndComp
 $Comp
 L device:R R1
 U 1 1 5B665553
-P 6250 1550
-F 0 "R1" V 6043 1550 50  0000 C CNN
-F 1 "10" V 6134 1550 50  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 6180 1550 50  0001 C CNN
-F 3 "" H 6250 1550 50  0001 C CNN
-	1    6250 1550
-	-1   0    0    1   
+P 5950 1400
+F 0 "R1" V 5743 1400 50  0000 C CNN
+F 1 "10" V 5834 1400 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5880 1400 50  0001 C CNN
+F 3 "" H 5950 1400 50  0001 C CNN
+	1    5950 1400
+	0    -1   -1   0   
 $EndComp
 $Comp
 L device:D_Zener D3
 U 1 1 5B6656B6
-P 6250 1850
-F 0 "D3" V 6204 1929 50  0000 L CNN
-F 1 "6.8" V 6295 1929 50  0000 L CNN
-F 2 "Diodes_THT:D_T-1_P5.08mm_Horizontal" H 6250 1850 50  0001 C CNN
-F 3 "https://en.wikipedia.org/wiki/Zener_diode" H 6250 1850 50  0001 C CNN
-	1    6250 1850
+P 6300 1650
+F 0 "D3" V 6254 1729 50  0000 L CNN
+F 1 "6.8" V 6345 1729 50  0000 L CNN
+F 2 "Diodes_THT:D_T-1_P5.08mm_Horizontal" H 6300 1650 50  0001 C CNN
+F 3 "https://en.wikipedia.org/wiki/Zener_diode" H 6300 1650 50  0001 C CNN
+	1    6300 1650
 	0    1    1    0   
 $EndComp
 Wire Wire Line
@@ -388,7 +388,6 @@ Wire Wire Line
 	5400 1400 5550 1400
 Wire Wire Line
 	5550 1500 5550 1400
-Connection ~ 5550 1400
 $Comp
 L power:GND #PWR0103
 U 1 1 5B6809E8
@@ -449,15 +448,8 @@ F 3 "" H 5250 1400 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	5550 1400 6250 1400
-Wire Wire Line
 	5550 1800 5550 2000
 Connection ~ 5550 2000
-Connection ~ 6250 1400
-Wire Wire Line
-	5550 2000 6250 2000
-Wire Wire Line
-	6250 1400 6750 1400
 $Comp
 L Transistor:BC557 Q2
 U 1 1 5B6EACA8
@@ -617,7 +609,7 @@ SD_MISO
 Text GLabel 10550 2500 2    50   Input ~ 0
 SD_SCK
 $Comp
-L w_conn:GS3 JP1
+L conn:GS3 JP1
 U 1 1 5B8479B7
 P 3200 1650
 F 0 "JP1" H 3200 1361 50  0000 C CNN
@@ -665,4 +657,18 @@ Text Notes 5650 3650 0    60   ~ 0
 Charge Pump and Motor Signal
 Text Notes 2650 3650 0    60   ~ 0
 Cassete Port Connector
+Wire Wire Line
+	5550 1400 5800 1400
+Connection ~ 5550 1400
+Wire Wire Line
+	6100 1400 6300 1400
+Wire Wire Line
+	6300 1500 6300 1400
+Connection ~ 6300 1400
+Wire Wire Line
+	6300 1400 6750 1400
+Wire Wire Line
+	6300 2000 6300 1800
+Wire Wire Line
+	5550 2000 6300 2000
 $EndSCHEMATC
